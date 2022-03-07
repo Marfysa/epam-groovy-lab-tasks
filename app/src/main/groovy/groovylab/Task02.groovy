@@ -8,6 +8,10 @@ package groovylab
 
 class Task02 {
     public static List mulEvenOdd(List l) {
-        throw UnsupportedOperationException('Not Implemented!')
+        def isOdd = { it%2 != 0 }
+        result = l.collect{
+            return (isOdd(it)) ? it.multiply(3) : it.multiply(2)
+        }
+        return result
     }
 }

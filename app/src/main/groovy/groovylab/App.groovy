@@ -2,6 +2,6 @@ package groovylab
 
 class App {
     static void main(String[] args) {
-        println "Hello world"
+        println Task02.mulEvenOdd([4,5,6])
     }
 }
