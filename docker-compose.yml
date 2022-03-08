@@ -1,13 +1,13 @@
 ---
 
-version: "3.3"
+version: "3.9"
 
 services:
   gradle:
     image: "gradle:7.2.0-jdk17"
-    working_dir: /d/Groovy/epam-groovy-lab-tasks
+    working_dir: "${PWD}"
     stdin_open: true
     tty: true
     entrypoint: "/bin/bash"
     volumes:
-      - .:/d/Groovy/epam-groovy-lab-tasks
+      - "${PWD}:${PWD}"
