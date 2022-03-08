@@ -9,7 +9,7 @@ package groovylab
 class Task02 {
     public static List mulEvenOdd(List l) {
         def isOdd = { it%2 != 0 }
-        result = l.collect{
+        def result = l.collect{
             return (isOdd(it)) ? it.multiply(3) : it.multiply(2)
         }
         return result
