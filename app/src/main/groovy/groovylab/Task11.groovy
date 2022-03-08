@@ -11,6 +11,9 @@ class Task11 {
     private static final String GSTRING_TEMPLATE = "1() 2() 3()"
 
     public static String gstring(String text, int num) {
-        throw UnsupportedOperationException('Not Implemented!')
+        def arr = []
+        for(int x = 1; x <= 3; x++)
+            x == num ? arr.add(x.toString() + "(" + text + ")") : arr.add(x.toString() + "()")  
+        return arr.join(" ")
     }
 }
