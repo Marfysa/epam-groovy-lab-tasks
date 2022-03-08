@@ -18,7 +18,7 @@ class Task07 {
         def result = []
         for ( def i in arr ){
             if (i.length() <= 2){
-                if (i.length() <= 1) { result << (int) w[0] }
+                if (i.length() <= 1) { result << (int) i[0] }
                 else {result << (int) i[0] + i[1]}
             }
             else {     
